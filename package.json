@@ -1,0 +1,28 @@
+{
+  "name": "discord-workflow-server",
+  "version": "1.0.0",
+  "description": "Backend server for a Discord workflow management bot.",
+  "homepage": "https://github.com/Inkveil-Studio/discord-workflow-server#readme",
+  "bugs": {
+    "url": "https://github.com/Inkveil-Studio/discord-workflow-server/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Inkveil-Studio/discord-workflow-server.git"
+  },
+  "license": "MIT",
+  "author": "Quang Tran",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/app.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
