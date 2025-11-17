@@ -1,0 +1,17 @@
+const { Client, GatewayIntentBits } = require("discord.js");
+const dotenv = require("dotenv").config();
+
+const eventHandler = require("./handlers/eventHandler.js");
+
+const client = new Client({
+    intents: [
+        GatewayIntentBits.Guilds,
+        GatewayIntentBits.GuildMembers,
+        GatewayIntentBits.GuildMessages,
+        GatewayIntentBits.MessageContent,
+    ],
+});
+
+eventHandler(client);
+
+client.login(process.env.DISCORD_TOKEN);
