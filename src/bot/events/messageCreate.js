@@ -9,14 +9,8 @@ module.exports = (client, msg) => {
     console.log(authorId);
     const adminIds = [661209040751296533, 814863824921296947];
 
-    if (msg.content === "ping") {
+    if (msg.content.includes("ping")) {
         msg.channel.send("pong");
-    }
-    if (msg.content === "ding") {
-        msg.channel.send("dong");
-    }
-    if (msg.content === "ching") {
-        msg.channel.send("chong");
     }
 
     if (isTagged) {

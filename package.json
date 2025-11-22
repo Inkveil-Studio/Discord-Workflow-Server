@@ -15,7 +15,8 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon src/app.js"
+    "start": "nodemon src/app.js",
+    "deploy-command": "node src/bot/deploy-commands.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
